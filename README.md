@@ -32,4 +32,4 @@ Feel free to alter them as you see fit.
 
 7. <b>Bonus:</b> Enable search, in a way you think provides good user experience .
 
-8. <b>Super Bonus:</b> Display a text input unit under the word so that a user can type text of any length (e.g. an example sentence) into it. Such text will also be displayed in detail view.
+8. <b>Super Bonus:</b> Display a text input unit under the word so that a user can type text of any length (e.g. an example sentence) into it. Such text will be displayed in both main & detail view.
