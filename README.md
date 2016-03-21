@@ -8,8 +8,11 @@ You are given a list of words to display. Your client wants to be able to select
 - <b>MasterViewController:</b> to display main list of words. This is where the guesture will shine.
 
 - <b>DetailViewController:</b> to display detail of a word (not implemented).
+
 - <b>TableViewCell:</b> custom cell class
+
 - <b>UIStoryboard+Addtion:</b> to provide convenient method to access storyboard items
+
 - <b>WordSource:</b> source of words
 
 Feel free to alter them as you see fit.
