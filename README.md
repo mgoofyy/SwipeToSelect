@@ -24,10 +24,12 @@ Feel free to alter them as you see fit.
 
 3. Enable swipe to select/deselect. Cells in the path of swipe guesture should toggle their states.
 
-4. A simple detail view is needed.
+4. Log selected words when 'OK' is pressed.
 
-5. Be able to shuffle words, i.e. randomly amend the order of words.
+5. A simple detail view is needed.
 
-6. <b>Bonus:</b> Enable search, in a way you think provides good user experience .
+6. Be able to shuffle words, i.e. randomly amend the order of words.
 
-7. <b>Super Bonus:</b> Display a text input unit under the word so that a user can type text of any length (e.g. an example sentence) into it. Such text will also be displayed in detail view.
+7. <b>Bonus:</b> Enable search, in a way you think provides good user experience .
+
+8. <b>Super Bonus:</b> Display a text input unit under the word so that a user can type text of any length (e.g. an example sentence) into it. Such text will also be displayed in detail view.
