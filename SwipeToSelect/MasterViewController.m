@@ -14,6 +14,7 @@
 #import "UISearchView.h"
 #import "UIView+Extension.h"
 #import "YCXMenu.h"
+#import "NSArray+Random.h"
 
 
 @interface MasterViewController () <UITextFieldDelegate>
@@ -48,6 +49,10 @@
                     [YCXMenuItem menuItem:@" 选中的数据"
                                     image:nil
                                       tag:102
+                                 userInfo:@{@"title":@"Menu"}],
+                    [YCXMenuItem menuItem:@" 随机排序"
+                                    image:nil
+                                      tag:103
                                  userInfo:@{@"title":@"Menu"}]
                     
                     ] mutableCopy];
@@ -105,6 +110,9 @@
                 
             } else if (item.tag == 102) {
                 _words = _selectWordArray;
+                [self.tableView reloadData];
+            } else if (item.tag == 103) {
+                _words = [NSArray arrayForRandom:_words];
                 [self.tableView reloadData];
             }
         }];

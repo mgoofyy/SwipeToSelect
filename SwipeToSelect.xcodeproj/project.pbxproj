@@ -20,6 +20,7 @@
 		35467FB71C9FBA5700AC3696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35467FB31C9FBA5700AC3696 /* main.m */; };
 		35467FB81C9FBA5700AC3696 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35467FB41C9FBA5700AC3696 /* words.txt */; };
 		35467FBB1C9FBAB400AC3696 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35467FBA1C9FBAB400AC3696 /* Info.plist */; };
+		FCA4311B1CA2C6D2009D3BB8 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */; };
 		FCFCDD5B1CA0F0CD005D1B6C /* selectWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = FCFCDD5A1CA0F0CD005D1B6C /* selectWord.txt */; };
 		FCFCDD5E1CA0F152005D1B6C /* UISearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD5D1CA0F152005D1B6C /* UISearchView.m */; };
 		FCFCDD611CA0F3BF005D1B6C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD601CA0F3BF005D1B6C /* UIView+Extension.m */; };
@@ -48,6 +49,8 @@
 		35467FB31C9FBA5700AC3696 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35467FB41C9FBA5700AC3696 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		35467FBA1C9FBAB400AC3696 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA431191CA2C6D2009D3BB8 /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
+		FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		FCFCDD5A1CA0F0CD005D1B6C /* selectWord.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selectWord.txt; sourceTree = "<group>"; };
 		FCFCDD5C1CA0F152005D1B6C /* UISearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchView.h; sourceTree = "<group>"; };
 		FCFCDD5D1CA0F152005D1B6C /* UISearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchView.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				FCFCDD621CA109C1005D1B6C /* YCXMenu */,
 				35467F751C9FA1CA00AC3696 /* MasterViewController.h */,
 				35467F761C9FA1CA00AC3696 /* MasterViewController.m */,
+				FCA431191CA2C6D2009D3BB8 /* NSArray+Random.h */,
+				FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */,
 				35467F781C9FA1CA00AC3696 /* DetailViewController.h */,
 				35467F791C9FA1CA00AC3696 /* DetailViewController.m */,
 				35467F8E1C9FA83200AC3696 /* TableViewCell.h */,
@@ -230,6 +235,7 @@
 				FCFCDD611CA0F3BF005D1B6C /* UIView+Extension.m in Sources */,
 				FCFCDD671CA109C1005D1B6C /* YCXMenu.m in Sources */,
 				FCFCDD5E1CA0F152005D1B6C /* UISearchView.m in Sources */,
+				FCA4311B1CA2C6D2009D3BB8 /* NSArray+Random.m in Sources */,
 				35467FA51C9FBA1C00AC3696 /* UIStoryboard+Addition.m in Sources */,
 				35467F741C9FA1CA00AC3696 /* AppDelegate.m in Sources */,
 				35467F911C9FA83200AC3696 /* TableViewCell.m in Sources */,
