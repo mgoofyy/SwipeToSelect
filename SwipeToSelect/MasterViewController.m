@@ -29,6 +29,10 @@
 //选中的内容
 @property (nonatomic,strong) NSMutableArray *selectWordArray;
 
+@property (nonatomic,strong) UITextField *inputSentenceTextField;
+
+@property (nonatomic,strong) UIView *bottomMaskView;
+
 @end
 #define THEME_COLOR [[UIColor blueColor] colorWithAlphaComponent:0.5]
 
@@ -88,6 +92,10 @@
     /**
      *  log all selected words in console
      */
+    //选中的单词
+    NSLog(@"%@",_selectWordArray);
+    
+    
 }
 
 - (void)leftBarButtonItemAction {
@@ -133,12 +141,53 @@
     UISearchView *searchBar = [UISearchView searchBar];
     searchBar.width = 200;
     searchBar.height = 30;
+    searchBar.tag = 40;
     searchBar.delegate = self;
     [searchBar addTarget:self action:@selector(textFieldEditChanged:) forControlEvents:UIControlEventEditingChanged];
     self.navigationItem.titleView = searchBar;
     
+    //底部输入框
+    self.bottomMaskView = [[UIView alloc]initWithFrame:CGRectMake(0, 150, self.view.width, 50)];
+    _bottomMaskView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:_bottomMaskView];
+    self.inputSentenceTextField = [[UITextField alloc]initWithFrame:CGRectMake(30, 10, self.view.width - 60, 30)];
+    _inputSentenceTextField.tag = 50;
+    _inputSentenceTextField.delegate = self;
+    _inputSentenceTextField.backgroundColor = [UIColor whiteColor];
+    _inputSentenceTextField.placeholder = @"请输入句子做匹配单词";
+    [_inputSentenceTextField addTarget:self action:@selector(textFieldEditChanged:) forControlEvents:UIControlEventEditingChanged];
+    [_bottomMaskView addSubview:_inputSentenceTextField];
+
 }
 
+
+#pragma mark function
+
+- (void)textFieldEditChanged:(UITextField *)textField
+{
+    //    条件动态匹配
+    if (textField.tag == 40) {
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@",textField.text];
+        NSLog(@"%@",[_wordSourceArray filteredArrayUsingPredicate:pred]);
+        _words = [_wordSourceArray filteredArrayUsingPredicate:pred];
+        [self.tableView reloadData];
+        if (textField.text == nil||[textField.text  isEqual: @""]) {
+            _words = _wordSourceArray;
+            [self.tableView reloadData];
+        }
+    } else if (textField.tag == 50) {
+        
+        NSArray *inputSingleWordArray = [textField.text componentsSeparatedByString:@" "];
+        NSLog(@"%@",inputSingleWordArray);
+        NSMutableSet *inputSingleWordSet = [[NSMutableSet alloc]initWithArray:inputSingleWordArray];
+        NSSet *sourceWordSet = [[NSSet alloc]initWithArray:_wordSourceArray];
+        [inputSingleWordSet intersectSet:sourceWordSet];
+        _words = [inputSingleWordSet allObjects];
+        [self.tableView reloadData];
+    }
+    
+    
+}
 
 
 #pragma mark - Table View
@@ -180,8 +229,6 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(TableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld",indexPath.row);
-    
     if ([self.selectWordArray containsObject:_words[cell.row]]) {
         cell.indicator.backgroundColor = THEME_COLOR;
         cell.indicator.highlighted = YES;
@@ -195,28 +242,11 @@
 
 #pragma mark TextFieldDelegate
 
-- (void)textFieldEditChanged:(UITextField *)textField
-{
-    //    条件动态匹配
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@",textField.text];
-    NSLog(@"%@",[_wordSourceArray filteredArrayUsingPredicate:pred]);
-    _words = [_wordSourceArray filteredArrayUsingPredicate:pred];
-    [self.tableView reloadData];
-    if (textField.text == nil||[textField.text  isEqual: @""]) {
-        _words = _wordSourceArray;
-        [self.tableView reloadData];
-    }
-    
-}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     _words = _wordSourceArray;
     [self.tableView reloadData];
     return YES;
 }
-
-
-
-
 
 @end
