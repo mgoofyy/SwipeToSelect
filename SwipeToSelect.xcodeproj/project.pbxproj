@@ -20,6 +20,11 @@
 		35467FB71C9FBA5700AC3696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35467FB31C9FBA5700AC3696 /* main.m */; };
 		35467FB81C9FBA5700AC3696 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35467FB41C9FBA5700AC3696 /* words.txt */; };
 		35467FBB1C9FBAB400AC3696 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35467FBA1C9FBAB400AC3696 /* Info.plist */; };
+		FCFCDD5B1CA0F0CD005D1B6C /* selectWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = FCFCDD5A1CA0F0CD005D1B6C /* selectWord.txt */; };
+		FCFCDD5E1CA0F152005D1B6C /* UISearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD5D1CA0F152005D1B6C /* UISearchView.m */; };
+		FCFCDD611CA0F3BF005D1B6C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD601CA0F3BF005D1B6C /* UIView+Extension.m */; };
+		FCFCDD671CA109C1005D1B6C /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD641CA109C1005D1B6C /* YCXMenu.m */; };
+		FCFCDD681CA109C1005D1B6C /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCDD661CA109C1005D1B6C /* YCXMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,15 @@
 		35467FB31C9FBA5700AC3696 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35467FB41C9FBA5700AC3696 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		35467FBA1C9FBAB400AC3696 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFCDD5A1CA0F0CD005D1B6C /* selectWord.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selectWord.txt; sourceTree = "<group>"; };
+		FCFCDD5C1CA0F152005D1B6C /* UISearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchView.h; sourceTree = "<group>"; };
+		FCFCDD5D1CA0F152005D1B6C /* UISearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchView.m; sourceTree = "<group>"; };
+		FCFCDD5F1CA0F3BF005D1B6C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FCFCDD601CA0F3BF005D1B6C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		FCFCDD631CA109C1005D1B6C /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenu.h; sourceTree = "<group>"; };
+		FCFCDD641CA109C1005D1B6C /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenu.m; sourceTree = "<group>"; };
+		FCFCDD651CA109C1005D1B6C /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenuItem.h; sourceTree = "<group>"; };
+		FCFCDD661CA109C1005D1B6C /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 				35467FB11C9FBA5700AC3696 /* Assets.xcassets */,
 				35467FB31C9FBA5700AC3696 /* main.m */,
 				35467FB41C9FBA5700AC3696 /* words.txt */,
+				FCFCDD5A1CA0F0CD005D1B6C /* selectWord.txt */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,17 +124,33 @@
 		35467FB91C9FBA7D00AC3696 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCFCDD621CA109C1005D1B6C /* YCXMenu */,
 				35467F751C9FA1CA00AC3696 /* MasterViewController.h */,
 				35467F761C9FA1CA00AC3696 /* MasterViewController.m */,
 				35467F781C9FA1CA00AC3696 /* DetailViewController.h */,
 				35467F791C9FA1CA00AC3696 /* DetailViewController.m */,
 				35467F8E1C9FA83200AC3696 /* TableViewCell.h */,
 				35467F8F1C9FA83200AC3696 /* TableViewCell.m */,
+				FCFCDD5C1CA0F152005D1B6C /* UISearchView.h */,
+				FCFCDD5D1CA0F152005D1B6C /* UISearchView.m */,
+				FCFCDD5F1CA0F3BF005D1B6C /* UIView+Extension.h */,
+				FCFCDD601CA0F3BF005D1B6C /* UIView+Extension.m */,
 				35467F901C9FA83200AC3696 /* TableViewCell.xib */,
 				35467F951C9FAABD00AC3696 /* Main.storyboard */,
 				35467F801C9FA1CA00AC3696 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		FCFCDD621CA109C1005D1B6C /* YCXMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FCFCDD631CA109C1005D1B6C /* YCXMenu.h */,
+				FCFCDD641CA109C1005D1B6C /* YCXMenu.m */,
+				FCFCDD651CA109C1005D1B6C /* YCXMenuItem.h */,
+				FCFCDD661CA109C1005D1B6C /* YCXMenuItem.m */,
+			);
+			path = YCXMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35467F821C9FA1CA00AC3696 /* LaunchScreen.storyboard in Resources */,
+				FCFCDD5B1CA0F0CD005D1B6C /* selectWord.txt in Resources */,
 				35467F961C9FAABD00AC3696 /* Main.storyboard in Resources */,
 				35467FBB1C9FBAB400AC3696 /* Info.plist in Resources */,
 				35467F921C9FA83200AC3696 /* TableViewCell.xib in Resources */,
@@ -195,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFCDD611CA0F3BF005D1B6C /* UIView+Extension.m in Sources */,
+				FCFCDD671CA109C1005D1B6C /* YCXMenu.m in Sources */,
+				FCFCDD5E1CA0F152005D1B6C /* UISearchView.m in Sources */,
 				35467FA51C9FBA1C00AC3696 /* UIStoryboard+Addition.m in Sources */,
 				35467F741C9FA1CA00AC3696 /* AppDelegate.m in Sources */,
 				35467F911C9FA83200AC3696 /* TableViewCell.m in Sources */,
+				FCFCDD681CA109C1005D1B6C /* YCXMenuItem.m in Sources */,
 				35467FA61C9FBA1C00AC3696 /* WordSource.m in Sources */,
 				35467F771C9FA1CA00AC3696 /* MasterViewController.m in Sources */,
 				35467FB71C9FBA5700AC3696 /* main.m in Sources */,
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeToSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maimemo.SwipeToSelect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goofyy.SwipeToSelect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -318,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeToSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maimemo.SwipeToSelect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goofyy.SwipeToSelect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -342,6 +378,7 @@
 				35467F881C9FA1CA00AC3696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

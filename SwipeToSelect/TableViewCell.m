@@ -41,6 +41,8 @@
 
 - (void)imageViewTapped:(UIGestureRecognizer *)gesture {
     [self setIndicatorHighlighted:!self.indicator.highlighted];
+
+    !_customSelectedBlock ?: _customSelectedBlock(self.indicator.highlighted, _cellContentArray[_row]);
 }
 
 @end
