@@ -20,6 +20,8 @@
 		35467FB71C9FBA5700AC3696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35467FB31C9FBA5700AC3696 /* main.m */; };
 		35467FB81C9FBA5700AC3696 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35467FB41C9FBA5700AC3696 /* words.txt */; };
 		35467FBB1C9FBAB400AC3696 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35467FBA1C9FBAB400AC3696 /* Info.plist */; };
+		FC96EB0D1CA59A4A00A2B5BD /* GFView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96EB0C1CA59A4A00A2B5BD /* GFView.m */; };
+		FC96EB101CA5ACE100A2B5BD /* NSArray+SloveString.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96EB0F1CA5ACE100A2B5BD /* NSArray+SloveString.m */; };
 		FCA4311B1CA2C6D2009D3BB8 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */; };
 		FCAD64E71CA500F100F826D8 /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAD64E41CA500F100F826D8 /* YCXMenu.m */; };
 		FCAD64E81CA500F100F826D8 /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAD64E61CA500F100F826D8 /* YCXMenuItem.m */; };
@@ -49,6 +51,10 @@
 		35467FB31C9FBA5700AC3696 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35467FB41C9FBA5700AC3696 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		35467FBA1C9FBAB400AC3696 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC96EB0B1CA59A4A00A2B5BD /* GFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFView.h; sourceTree = "<group>"; };
+		FC96EB0C1CA59A4A00A2B5BD /* GFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFView.m; sourceTree = "<group>"; };
+		FC96EB0E1CA5ACE100A2B5BD /* NSArray+SloveString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SloveString.h"; sourceTree = "<group>"; };
+		FC96EB0F1CA5ACE100A2B5BD /* NSArray+SloveString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SloveString.m"; sourceTree = "<group>"; };
 		FCA431191CA2C6D2009D3BB8 /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
 		FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		FCAD64E31CA500F100F826D8 /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenu.h; sourceTree = "<group>"; };
@@ -130,8 +136,12 @@
 				FCAD64E21CA500F100F826D8 /* YCXMenu */,
 				35467F751C9FA1CA00AC3696 /* MasterViewController.h */,
 				35467F761C9FA1CA00AC3696 /* MasterViewController.m */,
+				FC96EB0B1CA59A4A00A2B5BD /* GFView.h */,
+				FC96EB0C1CA59A4A00A2B5BD /* GFView.m */,
 				FCA431191CA2C6D2009D3BB8 /* NSArray+Random.h */,
 				FCA4311A1CA2C6D2009D3BB8 /* NSArray+Random.m */,
+				FC96EB0E1CA5ACE100A2B5BD /* NSArray+SloveString.h */,
+				FC96EB0F1CA5ACE100A2B5BD /* NSArray+SloveString.m */,
 				35467F781C9FA1CA00AC3696 /* DetailViewController.h */,
 				35467F791C9FA1CA00AC3696 /* DetailViewController.m */,
 				35467F8E1C9FA83200AC3696 /* TableViewCell.h */,
@@ -236,6 +246,8 @@
 				FCFCDD5E1CA0F152005D1B6C /* UISearchView.m in Sources */,
 				FCA4311B1CA2C6D2009D3BB8 /* NSArray+Random.m in Sources */,
 				35467FA51C9FBA1C00AC3696 /* UIStoryboard+Addition.m in Sources */,
+				FC96EB0D1CA59A4A00A2B5BD /* GFView.m in Sources */,
+				FC96EB101CA5ACE100A2B5BD /* NSArray+SloveString.m in Sources */,
 				FCAD64E81CA500F100F826D8 /* YCXMenuItem.m in Sources */,
 				FCAD64E71CA500F100F826D8 /* YCXMenu.m in Sources */,
 				35467F741C9FA1CA00AC3696 /* AppDelegate.m in Sources */,

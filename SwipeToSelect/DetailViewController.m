@@ -22,4 +22,9 @@
     [super didReceiveMemoryWarning];
 }
 
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"___________%s",__func__);
+}
 @end
