@@ -1,6 +1,6 @@
-# SwipeToSelect
+# SwipeToSelect(滑动选词)
 Implement swipe to select in UITableViewContoller
-
+![效果](https://github.com/mgoofyy/SwipeToSelect/1.gif)
 
 ### Background
 You are given a list of words to display. Your client wants to be able to select mutiple words as he moves his finger down the list. This project has a few classes available for you to start with:
@@ -33,3 +33,5 @@ Feel free to alter them as you see fit.
 7. <b>Bonus:</b> Enable search, in a way you think provides good user experience .
 
 8. <b>Super Bonus:</b> Display a text input unit under the word so that a user can type text of any length (e.g. an example sentence) into it. Such text will be displayed in both main & detail view.
+
+
